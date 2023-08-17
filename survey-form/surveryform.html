@@ -2,25 +2,34 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>survey form</title>
 </head>
 <header>
-  <h1 id="title">FORMS</h1>
+  <h1 id="title">FORM</h1>
   <p id="description">Please fill it out</p>
 </header>
 <body>
   <form id="survey-form">
-    <div><label id="name-label" for="name">
-      <p>Name:</p>
-      <input id="name" type="text" placeholder="Enter your name" required/>
-    </label></div>
-    <div><label id="email-label">
+    <div>
+      <label id="name-label" for="name">
+        <p>Name:</p>
+        <input id="name" type="text" placeholder="Enter your name" required/>
+      </label>
+    </div>
+    <div>
+      <label id="email-label">
       <p>E-mail:</p>
       <input id="email" type="email" placeholder="Enter your email" required/>
-    </label></div>
+      </label>
+    </div>
+    <br>
     <div><label id="number-label">
       <p>Number:</p>
       <input id="number" type="number" min="4" max="10" placeholder="Enter your phone number" required/>
     </label></div>
+    <br>
     <div><label>
       <p>What do you like?</p>
       <select id="dropdown">
@@ -28,26 +37,39 @@
         <option>Oranges</option>
       </select>
     </label></div>
-    <div><label>
-      <p>Did you like the website? ?</p>
-      <label><input type="radio" value="Yes" name="button" />Yes</label>
-      <label><input type="radio" value="No" name="button"/>No</label>
-    </label></div>
-    <div><label>
-      <p>Which field are you interested in?</p>
-      <label><input type="checkbox" value="Web development"/>Web development</label>
-      <label><input type="checkbox" value="Data science"/>Data science</label>
-      <label><input type="checkbox" value="Machine Learning"/>Machine learning</label>
-    </label></div>
-    <div><label>
-      <p>Message:</p>
-      <textarea>
-      </textarea>
-    </label></div>
-    <div><label type="sumbit">
-     <button id="submit">Submit</button> 
-    </label></div>
+    <br>
+    <div>
+      <label>
+        <p>Did you like the website?</p>
+        <label><input type="radio" value="Yes" name="button" />Yes</label>
+        <label><input type="radio" value="No" name="button"/>No</label>
+      </label>
+    </div>
+    <br>
+    <div>
+      <label>
+        <p>Which field are you interested in?</p>
+        <label><input type="checkbox" value="Web development"/>Web development</label>
+        <label><input type="checkbox" value="Data science"/>Data science</label>
+        <label><input type="checkbox" value="Machine Learning"/>Machine learning</label>
+      </label>
+    </div>
+    <br>
+    <div>
+      <label>
+        <p>Message:</p>
+        <textarea id="textarea">
+        </textarea>
+      </label>
+    </div>
+    <br>
+    <div>
+      <label type="sumbit">
+        <button id="submit">Submit</button> 
+      </label>
+    </div>
   </form>
 </body>
 </html>
+ 
  
