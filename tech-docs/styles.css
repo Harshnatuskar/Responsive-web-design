@@ -1,0 +1,102 @@
+html, body {
+    min-width: 250px;
+    color: #e9ecf0;
+    background-color: #000000;
+    line-height: 2;
+}
+   
+#navbar {
+position: fixed;
+top: 0;
+left: 0;
+width: 250px;
+height: 100%;
+background-color: #383c42;
+border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+  
+#navbar ul {
+height: 88%;
+padding: 0;
+overflow-y: auto;
+}
+  
+#navbar li {
+color: #939eae;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+list-style: none;
+position: relative;
+}
+  
+#navbar a { 
+padding: 10px 30px;
+color: #e9ecf0;
+text-decoration: none;
+cursor: pointer;
+}
+   
+#main-doc {
+position: relative;
+margin-left: 300px;
+padding: 20px;
+margin-bottom: 100px;
+}
+   
+header {
+color: #e9ecf0;
+margin: 10px;
+text-align: center;
+font-size: 1.8em;
+font-weight: thin;
+}
+  
+#main-doc header {
+text-align: left;
+margin: 0;
+}
+   
+section article {
+color: #939eae;
+margin: 15px;
+font-size: 0.96em;
+}
+  
+section li {
+margin: 15px 0 0 20px;
+} 
+
+code {
+display: block; 
+background-color: #2b3035;
+padding: 15px;
+margin: 10px;
+border-radius: 5px;
+line-height: 2;
+word-break: normal;
+word-wrap: normal;
+}
+   
+@media only screen and (max-width: 815px) {
+#navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 270px;
+    background-color: #2e343d;
+    border-bottom: 2px solid; 
+}
+  
+#navbar ul {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 207px;
+}
+  
+#main-doc {
+    position: relative;
+    margin-left: 0;
+    margin-top: 250px;
+}
+}
+  

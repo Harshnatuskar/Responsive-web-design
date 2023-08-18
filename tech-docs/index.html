@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Docs</header>
+        <ul>
+          <li><a class="nav-link" href="#intro">intro</a></li> 
+          <li><a class="nav-link" href="#syntax">syntax</a></li>
+          <li><a class="nav-link" href="#output">output</a></li>
+          <li><a class="nav-link" href="#comment">comment</a></li>
+          <li><a class="nav-link" href="#variable">variable</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">  
+        <section class="main-section" id="intro">
+          <header>intro</header>
+          <article>
+            <p>C++ is a cross-platform language that can be used to create high-performance applications.</p>
+            <ul>
+              <li>
+                <p>What is C++:</p>
+                <ul> 
+                  <li>Cross-platform language that can be used to create high-performance applications</li>
+                  <li>Extension to the C language</li>
+                  <li>Gives programmers a high level of control over system resources and memory</li> 
+                </ul>
+                <p>Why is it used:</p>
+                <ul> 
+                  <li>Worlds most popular programming language</li>
+                  <li>Can be found in operating systems, GUIs and embedded systems</li>
+                  <li>It is object oriented language, which gives a clear structure to the programs</li> 
+                  <li>Portable</li> 
+                </ul>
+              </li> 
+              </ul>
+            </ul>
+            <p>It is similar to C but supports classes and objects , when C does not.</p>
+          </article>
+        </section> 
+        <section class="main-section" id="syntax">
+          <header>syntax</header>
+          <article> 
+            <ul>  
+              <li>Here is some C++ code:</li>
+              <code>#include <iostream>
+                using namespace std;
+                
+                int main() {
+                  cout << "Hello World!";
+                  return 0;
+                }</code>
+              </ul>
+            </ul> 
+            <p>You need to install GCC to compile the code.</p>
+            <p>An IDE like VS-Code is also preferred for coding</p>
+          </article>
+        </section> 
+        <section class="main-section" id="output">
+          <header>output</header>
+          <article>
+            <p>The cout object, together with the << operator, is used to output values/print text:</p>
+            <ul> 
+              <li>You can add as many cout objects as you want. However, note that it does not insert a new line at the end of the output:</li>
+              <code>#include <iostream>
+                using namespace std;
+                
+                int main() {
+                  cout << "Hello World!";
+                  cout << "I am learning C++";
+                  return 0;
+                }</code>
+              </ul>
+            </ul> 
+          </article>
+        </section> 
+        <section class="main-section" id="comment">
+          <header>comment</header>
+          <article>
+            <p>Comments can be used to explain C++ code, and to make it more readable.</p>
+            <ul>
+              <li>
+                <p>There are two kinds of comments:</p>
+                <ul>
+                  <li>single line comment  </li>
+                  <li>multiline comment   </li> 
+                </ul>
+              </li> 
+              <code>// This is a single line comment</code>
+              <code>/* This is a multi-line comment*/</code>
+              </ul>
+            </ul> 
+          </article>
+        </section>     
+        <section class="main-section" id="variable">
+            <header>variable</header>
+            <article>
+              <p>Variables are containers for storing data values</p>
+              <ul>
+                <li>
+                  <p>For example:</p>
+                  <ul>
+                    <li>int: store integers</li>
+                    <li>double: stores floating point numbers</li>  
+                    <li>char: stores single characters</li>
+                    <li>string: stores text</li>
+                    <li>bool: stoes values with two states: true / false</li>
+                  </ul>
+                  <code>int num = 5;                
+                    double float = 5.99;     
+                    char letter = 'D';          
+                    string text = "Hello";      
+                    bool value = true; </code>
+                </li> 
+                <p>This is some basic info about C++</p>
+              </ul> 
+            </article>
+          </section>
+      </main>
+    </body>
+</html>
