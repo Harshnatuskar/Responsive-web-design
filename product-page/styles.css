@@ -1,0 +1,18 @@
+head{
+    display:flex;
+  }
+  
+  @media print{
+    body{
+      color: red;
+    }
+  }
+  
+  #nav-bar{
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
