@@ -1,37 +1,117 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
- </head>
- <body>
-    <header id="header">
-      <img id="header-img" src="https://imgs.search.brave.com/s-ijLiR6VnLV95IYSatlqF2gs8q5l3z9PhMqkoo9e3A/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDM1OTc0/ODUuanBn" width="20px" height="20ps" >
-      <nav id="nav-bar"> 
-          <h2><span>Product Page</span></h2>
-          <h3><a class="nav-link" href="#product">Product</a></h3> 
-          <h3><a class="nav-link" href="#about">About</a></h3>
-          <h3><a class="nav-link" href="#signup">Sign up</a></h3>
-      </nav>
-    </header>
-    <main id="main-doc">
-      <section id="product">
-        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/1S8L7t2tu0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-      </section>
-      <section id="about">
-        
-      </section>
-      <section id="signup">
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <p>Sign up now!</p> 
-            <input type="email" name="email" id="email" placeholder="Enter your mail id">
-            <br>
-            <br>
-            <input type="submit" id="submit" classplaceholder="submit">
-          </form>
-      </section>
-    </main>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    <title>Product page</title>
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <img id="header-img" src="http">
+            <div class="logo"> Light phone
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#working">Working</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <h3>Join the mailing list!</h3>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+                <input id="submit" type="submit" value="Get Started" class="btn" />
+        </section>
+
+        <div class-container>
+            <section id="features">
+                <div class="grid"> 
+                    <div class="icon"><i  ></i></div>
+                    <div class="desc">
+                      <h2>Minimal phone</h2>
+                      <p>The Light Phone II is a premium, minimal phone. </p>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="icon"><i  ></i></div>
+                    <div class="desc">
+                      <h2>No distractions</h2>
+                      <p>It's an experience we call going light.</p>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="icon">
+                      <i ></i>
+                    </div>
+                    <div class="desc">
+                      <h2>Light-weight</h2>
+                      <p>It's a phone, it calls and texts. 
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="icon">
+                      <i ></i>
+                    </div>
+                    <div class="desc">
+                      <h2>Unique</h2> 
+                      <p>The phone uses a unique electronic paper screen, a technology also found in popular e-readers.</p> 
+                    </div>
+                  </div>
+            </section>
+
+            <section id="working"> 
+              <iframe 
+                id="video"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/h81bLY3wQIs?controls=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </section>
+
+            <section id="pricing">
+                <div class="product" >
+                  <div class="level">Light phone 1</div>
+                  <h2>$150</h2>
+                  <ol>
+                    <li>E-ink display</li> 
+                    <li>12 hours battery</li> 
+                  </ol>
+                  <button class="btn">Buy</button>
+                </div>
+                <div class="product">
+                  <div class="level">Light Phone 2</div>
+                  <h2>$200</h2>
+                  <ol>
+                    <li>Ever feature from phone 1</li> 
+                    <li>Better battery</li>
+                    <li>Comes with case</li>
+                  </ol>
+                  <button class="btn">Buy</button>
+                </div> 
+              </section>
+              <footer>
+                <ul>
+                    <li>Terms And Conditions</li> 
+                </ul>
+              </footer>
+        </div>
+    </div>
+</body>
+</html> 
